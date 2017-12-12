@@ -10,4 +10,7 @@ def show_items():
     """Show index table of todo list items."""
 
     items = ListItem.query.all()
-    return render_template('index.html', items=items)
+    return render_template('todo.html', items=items)
+
+if __name__ == '__main__':
+    app.run()
